@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master DOM</title>
+    <!--css file added here-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--header start here-->
+    <header>
+       <h1 id='header'>Solution Of Money</h1><hr>
+    </header>
+
+    <!--main start here-->
+    <main>
+        <div id="container">
+            <div id="image-container">
+                <img src="images/money.png" alt="" width="360px" id="container-image" >
+            </div>
+            <div id="input-container">
+                <h1>Income</h1>
+                <div id="income-input-container">
+                    <label for="income" id="income-label">Income:</label>
+                    <input type="number" name="income" id="income-input" placeholder="Income..." value="5000">
+                </div>
+                <h1>Expenses</h1>
+                <div id="income-input-container">
+                    <label for="food" id="food-label">Food:</label>
+                    <input type="number" name="food" id="food-input" placeholder="Food..." value="1500">
+                </div>
+                <div id="income-input-container">
+                    <label for="rent" id="rent-label">Rent:</label>
+                    <input type="number" name="rent" id="rent-input" placeholder="Rent..." value="1200">
+                </div>
+                <div id="income-input-container">
+                    <label for="clothes" id="clothes-label">Clothes:</label>
+                    <input type="number" name="clothes" id="clothes-input" placeholder="Clothes..." value="300">
+                </div>
+                <button id="calculate"  onclick="calculate()">Calculate</button>
+                <div id="one">
+                    <h1 id="total-expenses">Total Expenses: <span id="expenses">3000</span></h1>
+                </div>
+                <div id="two">
+                    <h1 id="balance">Balance: <span id="balance-output">2000</span></h1>
+                </div>
+                <!--The code of save section-->
+                <div id="income-input-container-1">
+                    <h1>Save:</h1><br>
+                   <div id="save-container">
+                    <div>
+                    <div id="three">
+                    <input type="number" name="save" id="save-input" placeholder="Save..." value="20">
+                    <h1>%</h1>
+                    </div>
+                    </div>
+                    <button id="save-button" onclick="save()">Save</button>
+                   </div>
+                   <h1 id="saving">Saving Amount : <span id="saving-amount">1000</span></h1>
+                   <h1 id="remaining">Remaining Balance : <span id="remaining-amount">1000</span></h1>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--footer start here-->
+    <footer>
+
+    </footer>
+
+
+    <!--javascript file added here-->
+    <script src="script.js"></script>
+</body>
+</html>
